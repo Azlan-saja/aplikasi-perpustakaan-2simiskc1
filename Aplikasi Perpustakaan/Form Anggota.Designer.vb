@@ -39,8 +39,8 @@ Partial Class Form_Anggota
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.DataAnggota, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -220,16 +220,6 @@ Partial Class Form_Anggota
         Me.Panel1.Size = New System.Drawing.Size(1161, 136)
         Me.Panel1.TabIndex = 8
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(159, 29)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(363, 44)
-        Me.Label6.TabIndex = 4
-        Me.Label6.Text = "Input Data Anggota"
-        '
         'Label7
         '
         Me.Label7.AutoSize = True
@@ -239,6 +229,16 @@ Partial Class Form_Anggota
         Me.Label7.Size = New System.Drawing.Size(296, 29)
         Me.Label7.TabIndex = 4
         Me.Label7.Text = "Universitas Duta Bangsa"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(159, 29)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(363, 44)
+        Me.Label6.TabIndex = 4
+        Me.Label6.Text = "Input Data Anggota"
         '
         'Form_Anggota
         '

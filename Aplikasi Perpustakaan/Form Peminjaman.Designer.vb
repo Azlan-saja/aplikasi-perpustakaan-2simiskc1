@@ -26,6 +26,10 @@ Partial Class Form_Peminjaman
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.DtpLamaPinjam = New System.Windows.Forms.DateTimePicker()
+        Me.DtpTglPinjam = New System.Windows.Forms.DateTimePicker()
+        Me.CmbNim = New System.Windows.Forms.ComboBox()
+        Me.CmbKodeBuku = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TxtKodePinjam = New System.Windows.Forms.TextBox()
         Me.BtnSave = New System.Windows.Forms.Button()
@@ -33,10 +37,6 @@ Partial Class Form_Peminjaman
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.CmbKodeBuku = New System.Windows.Forms.ComboBox()
-        Me.CmbNim = New System.Windows.Forms.ComboBox()
-        Me.DtpTanggalPinjam = New System.Windows.Forms.DateTimePicker()
-        Me.DtpLamaPinjam = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.DataPeminjaman = New System.Windows.Forms.DataGridView()
         Me.Panel1.SuspendLayout()
@@ -78,7 +78,7 @@ Partial Class Form_Peminjaman
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.DtpLamaPinjam)
-        Me.GroupBox2.Controls.Add(Me.DtpTanggalPinjam)
+        Me.GroupBox2.Controls.Add(Me.DtpTglPinjam)
         Me.GroupBox2.Controls.Add(Me.CmbNim)
         Me.GroupBox2.Controls.Add(Me.CmbKodeBuku)
         Me.GroupBox2.Controls.Add(Me.Label1)
@@ -95,6 +95,36 @@ Partial Class Form_Peminjaman
         Me.GroupBox2.TabIndex = 13
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Input Peminjaman Buku"
+        '
+        'DtpLamaPinjam
+        '
+        Me.DtpLamaPinjam.Location = New System.Drawing.Point(766, 106)
+        Me.DtpLamaPinjam.Name = "DtpLamaPinjam"
+        Me.DtpLamaPinjam.Size = New System.Drawing.Size(406, 38)
+        Me.DtpLamaPinjam.TabIndex = 7
+        '
+        'DtpTglPinjam
+        '
+        Me.DtpTglPinjam.Location = New System.Drawing.Point(766, 50)
+        Me.DtpTglPinjam.Name = "DtpTglPinjam"
+        Me.DtpTglPinjam.Size = New System.Drawing.Size(406, 38)
+        Me.DtpTglPinjam.TabIndex = 7
+        '
+        'CmbNim
+        '
+        Me.CmbNim.FormattingEnabled = True
+        Me.CmbNim.Location = New System.Drawing.Point(224, 170)
+        Me.CmbNim.Name = "CmbNim"
+        Me.CmbNim.Size = New System.Drawing.Size(266, 39)
+        Me.CmbNim.TabIndex = 6
+        '
+        'CmbKodeBuku
+        '
+        Me.CmbKodeBuku.FormattingEnabled = True
+        Me.CmbKodeBuku.Location = New System.Drawing.Point(224, 109)
+        Me.CmbKodeBuku.Name = "CmbKodeBuku"
+        Me.CmbKodeBuku.Size = New System.Drawing.Size(266, 39)
+        Me.CmbKodeBuku.TabIndex = 6
         '
         'Label1
         '
@@ -164,36 +194,6 @@ Partial Class Form_Peminjaman
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Tanggal Pinjam"
         '
-        'CmbKodeBuku
-        '
-        Me.CmbKodeBuku.FormattingEnabled = True
-        Me.CmbKodeBuku.Location = New System.Drawing.Point(224, 109)
-        Me.CmbKodeBuku.Name = "CmbKodeBuku"
-        Me.CmbKodeBuku.Size = New System.Drawing.Size(266, 39)
-        Me.CmbKodeBuku.TabIndex = 6
-        '
-        'CmbNim
-        '
-        Me.CmbNim.FormattingEnabled = True
-        Me.CmbNim.Location = New System.Drawing.Point(224, 170)
-        Me.CmbNim.Name = "CmbNim"
-        Me.CmbNim.Size = New System.Drawing.Size(266, 39)
-        Me.CmbNim.TabIndex = 6
-        '
-        'DtpTanggalPinjam
-        '
-        Me.DtpTanggalPinjam.Location = New System.Drawing.Point(766, 50)
-        Me.DtpTanggalPinjam.Name = "DtpTanggalPinjam"
-        Me.DtpTanggalPinjam.Size = New System.Drawing.Size(406, 38)
-        Me.DtpTanggalPinjam.TabIndex = 7
-        '
-        'DtpLamaPinjam
-        '
-        Me.DtpLamaPinjam.Location = New System.Drawing.Point(766, 106)
-        Me.DtpLamaPinjam.Name = "DtpLamaPinjam"
-        Me.DtpLamaPinjam.Size = New System.Drawing.Size(406, 38)
-        Me.DtpLamaPinjam.TabIndex = 7
-        '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.DataPeminjaman)
@@ -238,7 +238,7 @@ Partial Class Form_Peminjaman
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents DtpLamaPinjam As System.Windows.Forms.DateTimePicker
-    Friend WithEvents DtpTanggalPinjam As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DtpTglPinjam As System.Windows.Forms.DateTimePicker
     Friend WithEvents CmbNim As System.Windows.Forms.ComboBox
     Friend WithEvents CmbKodeBuku As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label

@@ -1,2 +1,16 @@
 C:\Users\MSI GF63\AppData\Local\Temporary Projects\Aplikasi Perpustakaan\bin\Debug\Aplikasi Perpustakaan.exe.config
 C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\bin\Debug\Aplikasi Perpustakaan.exe.config
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\bin\Debug\Aplikasi Perpustakaan.exe
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\bin\Debug\Aplikasi Perpustakaan.pdb
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\bin\Debug\Aplikasi Perpustakaan.xml
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi_Perpustakaan.Form_Anggota.resources
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi_Perpustakaan.Form_Buku.resources
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi_Perpustakaan.Menu_Utama.resources
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi_Perpustakaan.Form_Peminjaman.resources
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi_Perpustakaan.Form_Pengembalian.resources
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi_Perpustakaan.Form_Login.resources
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi_Perpustakaan.Resources.resources
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi Perpustakaan.vbproj.GenerateResource.Cache
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi Perpustakaan.exe
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi Perpustakaan.xml
+C:\Users\MSI GF63\Documents\Visual Studio 2012\Projects\Aplikasi Perpustakaan\Aplikasi Perpustakaan\obj\Debug\Aplikasi Perpustakaan.pdb

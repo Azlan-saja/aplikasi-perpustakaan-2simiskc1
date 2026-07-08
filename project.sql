@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 01, 2026 at 01:29 PM
+-- Generation Time: Jul 08, 2026 at 02:38 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -28,12 +28,19 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `anggota` (
-  `Nirm` varchar(15) NOT NULL,
+  `Nim` varchar(15) NOT NULL,
   `Nama` text NOT NULL,
   `Kelas` varchar(10) NOT NULL,
   `Jurusan` varchar(25) NOT NULL,
   `No_Hp` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `anggota`
+--
+
+INSERT INTO `anggota` (`Nim`, `Nama`, `Kelas`, `Jurusan`, `No_Hp`) VALUES
+('1010', ' Azlan', ' ST1', ' Jur2', ' 0811');
 
 -- --------------------------------------------------------
 
@@ -46,8 +53,15 @@ CREATE TABLE `buku` (
   `Judul` varchar(25) NOT NULL,
   `Penulis` text NOT NULL,
   `Penerbit` varchar(20) NOT NULL,
-  `Tahun` int(11) NOT NULL
+  `Tahun_Terbit` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `buku`
+--
+
+INSERT INTO `buku` (`Kode_Buku`, `Judul`, `Penulis`, `Penerbit`, `Tahun_Terbit`) VALUES
+('B1', ' 1', ' 3', ' 4', 5);
 
 -- --------------------------------------------------------
 
@@ -62,6 +76,13 @@ CREATE TABLE `peminjaman` (
   `Tanggal_Pinjam` date NOT NULL,
   `Tanggal_Kembali` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `peminjaman`
+--
+
+INSERT INTO `peminjaman` (`Kode_Pinjam`, `Nim`, `Kode_Buku`, `Tanggal_Pinjam`, `Tanggal_Kembali`) VALUES
+('2', '1010', 'B1', '2026-07-08', '2026-07-13');
 
 -- --------------------------------------------------------
 
@@ -80,6 +101,13 @@ CREATE TABLE `pengembalian` (
   `Tanggal_Pinjam` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `pengembalian`
+--
+
+INSERT INTO `pengembalian` (`Kode_Pinjam`, `Kode_Buku`, `Nim`, `Tanggal_Kembali`, `Jatuh_Tempo`, `Denda_Perhari`, `Total_Denda`, `Tanggal_Pinjam`) VALUES
+('1', ' B1', ' 1010', '2026-07-16', ' 8', 7000, 42000, '2026-07-08');
+
 -- --------------------------------------------------------
 
 --
@@ -92,6 +120,13 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`username`, `password`) VALUES
+('admin', 'admin');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -99,7 +134,7 @@ CREATE TABLE `user` (
 -- Indexes for table `anggota`
 --
 ALTER TABLE `anggota`
-  ADD PRIMARY KEY (`Nirm`);
+  ADD PRIMARY KEY (`Nim`);
 
 --
 -- Indexes for table `buku`

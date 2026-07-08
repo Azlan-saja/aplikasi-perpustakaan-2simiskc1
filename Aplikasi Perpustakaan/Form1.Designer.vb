@@ -22,32 +22,32 @@ Partial Class Form_Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TxtUsername = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.BtnLogin = New System.Windows.Forms.Button()
+        Me.TxtPassword = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.BtnKembali = New System.Windows.Forms.Button()
+        Me.BtnAnggota = New System.Windows.Forms.Button()
+        Me.BtnBuku = New System.Windows.Forms.Button()
+        Me.BtnPinjam = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'TxtUsername
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(18, 92)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(289, 38)
-        Me.TextBox1.TabIndex = 0
+        Me.TxtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtUsername.Location = New System.Drawing.Point(18, 92)
+        Me.TxtUsername.Name = "TxtUsername"
+        Me.TxtUsername.Size = New System.Drawing.Size(289, 38)
+        Me.TxtUsername.TabIndex = 0
         '
         'Label1
         '
@@ -59,24 +59,24 @@ Partial Class Form_Login
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Username"
         '
-        'Button1
+        'BtnLogin
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(57, 277)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(188, 62)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Login"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnLogin.Location = New System.Drawing.Point(57, 277)
+        Me.BtnLogin.Name = "BtnLogin"
+        Me.BtnLogin.Size = New System.Drawing.Size(188, 62)
+        Me.BtnLogin.TabIndex = 2
+        Me.BtnLogin.Text = "Login"
+        Me.BtnLogin.UseVisualStyleBackColor = True
         '
-        'TextBox2
+        'TxtPassword
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(18, 206)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(289, 38)
-        Me.TextBox2.TabIndex = 0
+        Me.TxtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtPassword.Location = New System.Drawing.Point(18, 206)
+        Me.TxtPassword.Name = "TxtPassword"
+        Me.TxtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.TxtPassword.Size = New System.Drawing.Size(289, 38)
+        Me.TxtPassword.TabIndex = 0
         '
         'Label2
         '
@@ -90,9 +90,9 @@ Partial Class Form_Login
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.TxtUsername)
+        Me.GroupBox1.Controls.Add(Me.BtnLogin)
+        Me.GroupBox1.Controls.Add(Me.TxtPassword)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
@@ -135,10 +135,10 @@ Partial Class Form_Login
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Button5)
-        Me.GroupBox2.Controls.Add(Me.Button4)
-        Me.GroupBox2.Controls.Add(Me.Button3)
-        Me.GroupBox2.Controls.Add(Me.Button2)
+        Me.GroupBox2.Controls.Add(Me.BtnKembali)
+        Me.GroupBox2.Controls.Add(Me.BtnAnggota)
+        Me.GroupBox2.Controls.Add(Me.BtnBuku)
+        Me.GroupBox2.Controls.Add(Me.BtnPinjam)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 153)
         Me.GroupBox2.Name = "GroupBox2"
@@ -147,45 +147,45 @@ Partial Class Form_Login
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Menu"
         '
-        'Button2
+        'BtnKembali
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(25, 37)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(230, 174)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Peminjaman"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnKembali.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnKembali.Location = New System.Drawing.Point(261, 217)
+        Me.BtnKembali.Name = "BtnKembali"
+        Me.BtnKembali.Size = New System.Drawing.Size(243, 166)
+        Me.BtnKembali.TabIndex = 2
+        Me.BtnKembali.Text = "Pengembalian"
+        Me.BtnKembali.UseVisualStyleBackColor = True
         '
-        'Button3
+        'BtnAnggota
         '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(261, 37)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(243, 174)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Input Buku"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.BtnAnggota.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnAnggota.Location = New System.Drawing.Point(25, 217)
+        Me.BtnAnggota.Name = "BtnAnggota"
+        Me.BtnAnggota.Size = New System.Drawing.Size(230, 166)
+        Me.BtnAnggota.TabIndex = 2
+        Me.BtnAnggota.Text = "Input Anggota"
+        Me.BtnAnggota.UseVisualStyleBackColor = True
         '
-        'Button4
+        'BtnBuku
         '
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(25, 217)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(230, 166)
-        Me.Button4.TabIndex = 2
-        Me.Button4.Text = "Input Anggota"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.BtnBuku.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnBuku.Location = New System.Drawing.Point(261, 37)
+        Me.BtnBuku.Name = "BtnBuku"
+        Me.BtnBuku.Size = New System.Drawing.Size(243, 174)
+        Me.BtnBuku.TabIndex = 2
+        Me.BtnBuku.Text = "Input Buku"
+        Me.BtnBuku.UseVisualStyleBackColor = True
         '
-        'Button5
+        'BtnPinjam
         '
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(261, 217)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(243, 166)
-        Me.Button5.TabIndex = 2
-        Me.Button5.Text = "Pengembalian"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.BtnPinjam.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnPinjam.Location = New System.Drawing.Point(25, 37)
+        Me.BtnPinjam.Name = "BtnPinjam"
+        Me.BtnPinjam.Size = New System.Drawing.Size(230, 174)
+        Me.BtnPinjam.TabIndex = 2
+        Me.BtnPinjam.Text = "Peminjaman"
+        Me.BtnPinjam.UseVisualStyleBackColor = True
         '
         'Form_Login
         '
@@ -196,6 +196,7 @@ Partial Class Form_Login
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form_Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form Login"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -205,19 +206,19 @@ Partial Class Form_Login
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TxtUsername As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents BtnLogin As System.Windows.Forms.Button
+    Friend WithEvents TxtPassword As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents BtnKembali As System.Windows.Forms.Button
+    Friend WithEvents BtnAnggota As System.Windows.Forms.Button
+    Friend WithEvents BtnBuku As System.Windows.Forms.Button
+    Friend WithEvents BtnPinjam As System.Windows.Forms.Button
 
 End Class

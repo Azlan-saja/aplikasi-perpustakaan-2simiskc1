@@ -23,8 +23,8 @@ Partial Class Form_Pengembalian
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataPengembalian = New System.Windows.Forms.DataGridView()
-        Me.DtpTanggalKembali = New System.Windows.Forms.DateTimePicker()
-        Me.DtpTanggalPinjam = New System.Windows.Forms.DateTimePicker()
+        Me.DtpTglKembali = New System.Windows.Forms.DateTimePicker()
+        Me.DtpTglPinjam = New System.Windows.Forms.DateTimePicker()
         Me.CmbKodePinjam = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TxtKodeBuku = New System.Windows.Forms.TextBox()
@@ -34,19 +34,20 @@ Partial Class Form_Pengembalian
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.TxtTotalDenda = New System.Windows.Forms.TextBox()
+        Me.TxtDenda = New System.Windows.Forms.TextBox()
+        Me.TxtJatuhTempo = New System.Windows.Forms.TextBox()
+        Me.TxtNim = New System.Windows.Forms.TextBox()
+        Me.TxtLamaPinjam = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TxtNim = New System.Windows.Forms.TextBox()
-        Me.TxtJatuhTempo = New System.Windows.Forms.TextBox()
-        Me.TxtLamaPinjam = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TxtDenda = New System.Windows.Forms.TextBox()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.TxtTotalDenda = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         CType(Me.DataPengembalian, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -62,19 +63,19 @@ Partial Class Form_Pengembalian
         Me.DataPengembalian.Size = New System.Drawing.Size(1266, 197)
         Me.DataPengembalian.TabIndex = 0
         '
-        'DtpTanggalKembali
+        'DtpTglKembali
         '
-        Me.DtpTanggalKembali.Location = New System.Drawing.Point(865, 171)
-        Me.DtpTanggalKembali.Name = "DtpTanggalKembali"
-        Me.DtpTanggalKembali.Size = New System.Drawing.Size(406, 38)
-        Me.DtpTanggalKembali.TabIndex = 7
+        Me.DtpTglKembali.Location = New System.Drawing.Point(865, 171)
+        Me.DtpTglKembali.Name = "DtpTglKembali"
+        Me.DtpTglKembali.Size = New System.Drawing.Size(406, 38)
+        Me.DtpTglKembali.TabIndex = 7
         '
-        'DtpTanggalPinjam
+        'DtpTglPinjam
         '
-        Me.DtpTanggalPinjam.Location = New System.Drawing.Point(865, 50)
-        Me.DtpTanggalPinjam.Name = "DtpTanggalPinjam"
-        Me.DtpTanggalPinjam.Size = New System.Drawing.Size(406, 38)
-        Me.DtpTanggalPinjam.TabIndex = 7
+        Me.DtpTglPinjam.Location = New System.Drawing.Point(865, 50)
+        Me.DtpTglPinjam.Name = "DtpTglPinjam"
+        Me.DtpTglPinjam.Size = New System.Drawing.Size(406, 38)
+        Me.DtpTglPinjam.TabIndex = 7
         '
         'CmbKodePinjam
         '
@@ -155,8 +156,8 @@ Partial Class Form_Pengembalian
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.DtpTanggalKembali)
-        Me.GroupBox2.Controls.Add(Me.DtpTanggalPinjam)
+        Me.GroupBox2.Controls.Add(Me.DtpTglKembali)
+        Me.GroupBox2.Controls.Add(Me.DtpTglPinjam)
         Me.GroupBox2.Controls.Add(Me.CmbKodePinjam)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.TxtTotalDenda)
@@ -181,6 +182,86 @@ Partial Class Form_Pengembalian
         Me.GroupBox2.TabIndex = 16
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Input Pengembalian Buku"
+        '
+        'TxtTotalDenda
+        '
+        Me.TxtTotalDenda.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtTotalDenda.Location = New System.Drawing.Point(1181, 254)
+        Me.TxtTotalDenda.Name = "TxtTotalDenda"
+        Me.TxtTotalDenda.Size = New System.Drawing.Size(266, 38)
+        Me.TxtTotalDenda.TabIndex = 3
+        '
+        'TxtDenda
+        '
+        Me.TxtDenda.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtDenda.Location = New System.Drawing.Point(661, 257)
+        Me.TxtDenda.Name = "TxtDenda"
+        Me.TxtDenda.Size = New System.Drawing.Size(266, 38)
+        Me.TxtDenda.TabIndex = 3
+        '
+        'TxtJatuhTempo
+        '
+        Me.TxtJatuhTempo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtJatuhTempo.Location = New System.Drawing.Point(208, 257)
+        Me.TxtJatuhTempo.Name = "TxtJatuhTempo"
+        Me.TxtJatuhTempo.Size = New System.Drawing.Size(266, 38)
+        Me.TxtJatuhTempo.TabIndex = 3
+        '
+        'TxtNim
+        '
+        Me.TxtNim.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtNim.Location = New System.Drawing.Point(224, 161)
+        Me.TxtNim.Name = "TxtNim"
+        Me.TxtNim.Size = New System.Drawing.Size(266, 38)
+        Me.TxtNim.TabIndex = 3
+        '
+        'TxtLamaPinjam
+        '
+        Me.TxtLamaPinjam.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtLamaPinjam.Location = New System.Drawing.Point(865, 112)
+        Me.TxtLamaPinjam.Name = "TxtLamaPinjam"
+        Me.TxtLamaPinjam.Size = New System.Drawing.Size(266, 38)
+        Me.TxtLamaPinjam.TabIndex = 3
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(994, 257)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(181, 32)
+        Me.Label10.TabIndex = 4
+        Me.Label10.Text = "Total Denda"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(559, 260)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(96, 32)
+        Me.Label9.TabIndex = 4
+        Me.Label9.Text = "Denta"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(11, 260)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(191, 32)
+        Me.Label8.TabIndex = 4
+        Me.Label8.Text = "Jatuh Tempo"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(532, 118)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(192, 32)
+        Me.Label11.TabIndex = 4
+        Me.Label11.Text = "Lama Pinjam"
         '
         'Label2
         '
@@ -215,6 +296,7 @@ Partial Class Form_Pengembalian
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.Label7)
+        Me.Panel1.Controls.Add(Me.DateTimePicker2)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -222,85 +304,12 @@ Partial Class Form_Pengembalian
         Me.Panel1.Size = New System.Drawing.Size(1487, 136)
         Me.Panel1.TabIndex = 15
         '
-        'TxtNim
+        'DateTimePicker2
         '
-        Me.TxtNim.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtNim.Location = New System.Drawing.Point(224, 161)
-        Me.TxtNim.Name = "TxtNim"
-        Me.TxtNim.Size = New System.Drawing.Size(266, 38)
-        Me.TxtNim.TabIndex = 3
-        '
-        'TxtJatuhTempo
-        '
-        Me.TxtJatuhTempo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtJatuhTempo.Location = New System.Drawing.Point(208, 257)
-        Me.TxtJatuhTempo.Name = "TxtJatuhTempo"
-        Me.TxtJatuhTempo.Size = New System.Drawing.Size(266, 38)
-        Me.TxtJatuhTempo.TabIndex = 3
-        '
-        'TxtLamaPinjam
-        '
-        Me.TxtLamaPinjam.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtLamaPinjam.Location = New System.Drawing.Point(865, 112)
-        Me.TxtLamaPinjam.Name = "TxtLamaPinjam"
-        Me.TxtLamaPinjam.Size = New System.Drawing.Size(266, 38)
-        Me.TxtLamaPinjam.TabIndex = 3
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(11, 260)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(191, 32)
-        Me.Label8.TabIndex = 4
-        Me.Label8.Text = "Jatuh Tempo"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(559, 260)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(96, 32)
-        Me.Label9.TabIndex = 4
-        Me.Label9.Text = "Denta"
-        '
-        'TxtDenda
-        '
-        Me.TxtDenda.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtDenda.Location = New System.Drawing.Point(661, 257)
-        Me.TxtDenda.Name = "TxtDenda"
-        Me.TxtDenda.Size = New System.Drawing.Size(266, 38)
-        Me.TxtDenda.TabIndex = 3
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(994, 257)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(181, 32)
-        Me.Label10.TabIndex = 4
-        Me.Label10.Text = "Total Denda"
-        '
-        'TxtTotalDenda
-        '
-        Me.TxtTotalDenda.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtTotalDenda.Location = New System.Drawing.Point(1181, 254)
-        Me.TxtTotalDenda.Name = "TxtTotalDenda"
-        Me.TxtTotalDenda.Size = New System.Drawing.Size(266, 38)
-        Me.TxtTotalDenda.TabIndex = 3
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(532, 118)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(192, 32)
-        Me.Label11.TabIndex = 4
-        Me.Label11.Text = "Lama Pinjam"
+        Me.DateTimePicker2.Location = New System.Drawing.Point(898, 50)
+        Me.DateTimePicker2.Name = "DateTimePicker2"
+        Me.DateTimePicker2.Size = New System.Drawing.Size(406, 22)
+        Me.DateTimePicker2.TabIndex = 7
         '
         'Form_Pengembalian
         '
@@ -322,8 +331,8 @@ Partial Class Form_Pengembalian
 
     End Sub
     Friend WithEvents DataPengembalian As System.Windows.Forms.DataGridView
-    Friend WithEvents DtpTanggalKembali As System.Windows.Forms.DateTimePicker
-    Friend WithEvents DtpTanggalPinjam As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DtpTglKembali As System.Windows.Forms.DateTimePicker
+    Friend WithEvents DtpTglPinjam As System.Windows.Forms.DateTimePicker
     Friend WithEvents CmbKodePinjam As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents TxtKodeBuku As System.Windows.Forms.TextBox
@@ -346,4 +355,5 @@ Partial Class Form_Pengembalian
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
 End Class
