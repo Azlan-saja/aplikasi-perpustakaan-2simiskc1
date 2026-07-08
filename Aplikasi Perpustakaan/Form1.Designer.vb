@@ -149,6 +149,7 @@ Partial Class Form_Login
         '
         'BtnKembali
         '
+        Me.BtnKembali.Enabled = False
         Me.BtnKembali.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnKembali.Location = New System.Drawing.Point(261, 217)
         Me.BtnKembali.Name = "BtnKembali"
@@ -159,6 +160,7 @@ Partial Class Form_Login
         '
         'BtnAnggota
         '
+        Me.BtnAnggota.Enabled = False
         Me.BtnAnggota.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnAnggota.Location = New System.Drawing.Point(25, 217)
         Me.BtnAnggota.Name = "BtnAnggota"
@@ -169,6 +171,7 @@ Partial Class Form_Login
         '
         'BtnBuku
         '
+        Me.BtnBuku.Enabled = False
         Me.BtnBuku.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnBuku.Location = New System.Drawing.Point(261, 37)
         Me.BtnBuku.Name = "BtnBuku"
@@ -179,6 +182,7 @@ Partial Class Form_Login
         '
         'BtnPinjam
         '
+        Me.BtnPinjam.Enabled = False
         Me.BtnPinjam.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPinjam.Location = New System.Drawing.Point(25, 37)
         Me.BtnPinjam.Name = "BtnPinjam"
